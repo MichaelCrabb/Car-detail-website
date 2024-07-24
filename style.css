@@ -1,0 +1,68 @@
+body {
+    font-size: 25px;
+    margin: 5%;
+}
+
+#GeneralIntroduction {
+    height: 100vh;
+    display: flex;
+    place-items: center;
+}
+
+#ColtIntroduction {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#LilBroPic {
+    max-width: 20%;
+}
+
+#ColtIntroductionContent {
+    margin-left: 2%;
+    max-width: 30%;
+    display: grid;
+    place-items: center;
+}
+
+#JakeIntroduction {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#JakeIntroductionContent {
+    margin-left: 2%;
+    max-width: 30%;
+    display: grid;
+    place-items: center;
+}
+
+#JakePic {
+    max-width: 20%;
+}
+
+.ScrollObject {
+    animation-name: showUpAndSlide;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.ScrollObjectDelay {
+    animation-name: showUpAndSlide;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 150ms;
+}
+
+@keyframes showUpAndSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
