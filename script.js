@@ -10,6 +10,7 @@ function checkPosition() {
 
         if (positionFromTop - windowHeight <= 0) {
             element.classList.add('ScrollObject');
+            element.classList.remove('Invisible');
         }
     });
     delayedElements.forEach(delayedElement => {
@@ -17,6 +18,7 @@ function checkPosition() {
 
         if (positionFromTopDelayed - windowHeight <= 0) {
             delayedElement.classList.add('ScrollObjectDelay');
+            delayedElement.classList.remove('Invisible');
         }
     });
 }

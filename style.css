@@ -1,12 +1,13 @@
 body {
     font-size: 25px;
-    margin: 5%;
+    margin: 0;
 }
 
 #GeneralIntroduction {
-    height: 100vh;
+    height: 85vh;
     display: flex;
     place-items: center;
+    margin: 5%;
 }
 
 #ColtIntroduction {
@@ -30,6 +31,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    margin-bottom: 4%;
 }
 
 #JakeIntroductionContent {
@@ -43,26 +45,80 @@ body {
     max-width: 20%;
 }
 
+.Invisible {
+    opacity: 0;
+}
+
 .ScrollObject {
     animation-name: showUpAndSlide;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
+    animation-delay: 100ms;
+    transition: opacity 1s;
+    opacity: 1;
+    transition-delay: 100ms
 }
 
 .ScrollObjectDelay {
     animation-name: showUpAndSlide;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
-    animation-delay: 150ms;
+    animation-delay: 250ms;
+    transition: opacity 1s;
+    opacity: 1;
+    transition-delay: 250ms
+}
+
+#PricesAndCars {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.ModalButton {
+    width: 20vw;
+    height: 20vw;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: none;
+    font: inherit;
+    font-size: 20px;
+    user-select: text;
+    display: flex;
+    transition: 300ms all ease-out;
+    cursor: pointer;
+}
+
+.ModalButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.ModalImage {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+#Footer {
+    background-color: black;
+    color: white;
+    height: 20vh;
+    padding: 3vh;
+}
+
+a {
+    color: blue;
 }
 
 @keyframes showUpAndSlide {
-    0% {
-        opacity: 0;
+    from {
         transform: translateX(-100px);
     }
-    100% {
-        opacity: 1;
+    to {
         transform: translateX(0px);
     }
 }
