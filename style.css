@@ -101,7 +101,26 @@ body {
     max-height: 100%;
 }
 
+.Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 400ms ease-in-out;
+    border: 2px solid black;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: white;
+    overflow-y: scroll;
+    width: 1200px;
+    height: 600px;
+    max-width: 80%;
+    max-height: 80%;
+}
 
+.Modal.Active {
+    transform: translate(-50%, -50%) scale(1);
+}
 
 #Footer {
     background-color: black;

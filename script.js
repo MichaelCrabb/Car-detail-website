@@ -1,7 +1,33 @@
+const openButton = document.querySelectorAll("[data-modal-target]");
+const closeButton = document.querySelectorAll("[data-close-target]");
+
+openButton.forEach((button) => {
+    button.addEventListener("click", () => {
+        const modal = document.querySelector(button.dataset.modalTarget);
+        openModal(modal);
+    })
+});
+
+closeButton.forEach((button) => {
+    button.addEventListener("click", () => {
+        const modal = button.closest(".Modal");
+        closeModal(modal);
+    })
+});
+
+function openModal(modal) {
+    if (modal == null) return;
+    modal.classList.add("Active");
+}
+
+function closeModal(modal) {
+    if (modal == null) return;
+    modal.classList.remove("Active");
+}
 
 document.addEventListener('DOMContentLoaded', function() {
 const elements = document.querySelectorAll('.ToBeAnimated');
-const delayedElements = document.querySelectorAll('.ToBeAnimatedDelayed')
+const delayedElements = document.querySelectorAll('.ToBeAnimatedDelayed');
 
 function checkPosition() {
     const windowHeight = window.innerHeight;
@@ -27,4 +53,3 @@ window.addEventListener('scroll', checkPosition);
 window.addEventListener('resize', checkPosition);
 checkPosition();
 });
- 

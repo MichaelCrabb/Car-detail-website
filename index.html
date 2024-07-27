@@ -1,5 +1,7 @@
 <!Doctype html>
 
+<html>
+
 <head>
     <title>okcEliteDetailing.com</title>
     <link rel="stylesheet" href="style.css">
@@ -33,10 +35,37 @@
         </div>
 
         <div id="PricesAndCars">
-            <img src="SUV.jpg" class="ModalButton">
-            <img src="Truck.jpg" class="ModalButton">
-            <img src="Sedan.png" class="ModalButton">
-            <img src="Coupe.jpg" class="ModalButton">
+            <img src="SUV.jpg" data-modal-target="#SUVModal" class="ModalButton">
+            <div id="SUVModal" class="Modal">
+                <button data-close-target="#SUVModal" class="CloseButton">&times;</button>
+                <div>
+                    SUV Modal Content
+                </div>
+            </div>
+
+            <img src="Truck.jpg" data-modal-target="#TruckModal" class="ModalButton">
+            <div id="TruckModal" class="Modal">
+                <button data-close-target="#TruckModal" class="CloseButton">&times;</button>
+                <div>
+                    Truck Modal Content
+                </div>
+            </div>
+
+            <img src="Sedan.png" data-modal-target="#SedanModal" class="ModalButton">
+            <div id="SedanModal" class="Modal">
+                <button data-close-target="#SedanModal" class="CloseButton">&times;</button>
+                <div>
+                    Sedan Modal Content
+                </div>
+            </div>
+            
+            <img src="Coupe.jpg" data-modal-target="#CoupeModal" class="ModalButton">
+            <div id="CoupeModal" class="Modal">
+                <button data-close-target="#CoupeModal" class="CloseButton">&times;</button>
+                <div>
+                    Coupe Modal Content
+                </div>
+            </div>
         </div>
 
     </div>
@@ -46,7 +75,7 @@
         <div id="FooterContent">
             Check us out at on our <a href="https://www.instagram.com/okcelitedetailing/" title="Our Instagram @okcelitedetailing" 
             target="_blank">Instagram</a>, <a href="https://www.tiktok.com/@okcelitedetailing/" title="Our TikTok @okcelitedetailing" 
-            target="_blank">TikTok</a>, and our <a href="" title="Our FaceBook @okcelitedetailing" targer="_blank">FaceBook</a>.
+            target="_blank">TikTok</a>, and our <a href="" title="Our FaceBook @okcelitedetailing" target="_blank">FaceBook</a>.
         </div>
 
     </footer>
@@ -54,3 +83,5 @@
     <script src="script.js"></script>
 
 </body>
+
+</html>
