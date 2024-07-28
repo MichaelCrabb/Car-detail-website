@@ -3,17 +3,51 @@ body {
     margin: 0;
 }
 
+#Overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+#Overlay.OverlayActive {
+    filter: blur(20px);
+    opacity: 1;
+}
+
 #GeneralIntroduction {
     height: 85vh;
     display: flex;
     place-items: center;
-    margin: 5%;
+    padding: 5%;
+    background-image: url('Chamonix\ Mont\ Blanc.jpg');
+}
+
+#GeneralIntroContent {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1%;
+    border-radius: 10px;
+}
+
+#GeneralText {
+    color: white;
+}
+
+#ColtandJakeIntros {
+    /*
+    background-image: url('InfrontOfCar.jpg');
+    background-size: 100%;        Ask colton about this (him and jake infront of car, whether he wants it or not)
+    */
 }
 
 #ColtIntroduction {
     display: flex;
     justify-content: center;
-    margin-top: 2%;
+    padding-top: 3%;
 }
 
 #LilBroPic {
@@ -21,7 +55,7 @@ body {
 }
 
 #ColtIntroductionContent {
-    margin-left: 2%;
+    padding-left: 2%;
     max-width: 30%;
     display: grid;
     place-items: center;
@@ -30,12 +64,12 @@ body {
 #JakeIntroduction {
     display: flex;
     justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 4%;
+    padding-top: 3%;
+    padding-bottom: 4%;
 }
 
 #JakeIntroductionContent {
-    margin-left: 2%;
+    padding-left: 2%;
     max-width: 30%;
     display: grid;
     place-items: center;
@@ -56,7 +90,7 @@ body {
     animation-delay: 100ms;
     transition: opacity 1s;
     opacity: 1;
-    transition-delay: 100ms
+    transition-delay: 100ms;
 }
 
 .ScrollObjectDelay {
@@ -66,7 +100,27 @@ body {
     animation-delay: 250ms;
     transition: opacity 1s;
     opacity: 1;
-    transition-delay: 250ms
+    transition-delay: 250ms;
+}
+
+.ScrollObjectDelay2 {
+    animation-name: showUpAndSlide;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 400ms;
+    transition: opacity 1s;
+    opacity: 1;
+    transition-delay: 400ms;
+}
+
+.ScrollObjectDelay3 {
+    animation-name: showUpAndSlide;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 550ms;
+    transition: opacity 1s;
+    opacity: 1;
+    transition-delay: 550ms;
 }
 
 #PricesAndCars {
@@ -77,21 +131,31 @@ body {
     margin-bottom: 2%;
 }
 
+.TextRaise {
+    position: absolute;
+
+    transition-duration: 500ms;
+    z-index: -1;
+}
+
+.Raise {
+    transform: translate(20px, -50px);
+}
+
 .ModalButton {
     width: 20vw;
     height: 20vw;
     border: 2px solid black;
     border-radius: 5px;
-    background: none;
-    font: inherit;
-    font-size: 20px;
-    user-select: text;
-    display: flex;
-    transition: 300ms all ease-out;
     cursor: pointer;
+    z-index: 10;
 }
 
-.ModalButton:hover {
+.Grow {
+    transition: 300ms all ease-out;
+}
+
+.Hover {
     transform: scale(1.1);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
@@ -109,7 +173,7 @@ body {
     transition: 400ms ease-in-out;
     border: 2px solid black;
     border-radius: 5px;
-    z-index: 10;
+    z-index: 100;
     background-color: white;
     overflow-y: scroll;
     width: 1200px;
@@ -120,6 +184,35 @@ body {
 
 .Modal.Active {
     transform: translate(-50%, -50%) scale(1);
+}
+
+.CloseButton {
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.CloseButton:Hover {
+    transform: rotate(90deg) scale(1.3);
+}
+
+.Header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HeaderContent {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.ModalContent {
+    padding: 10px 15px;
 }
 
 #Footer {

@@ -9,60 +9,100 @@
 
 <body>
 
+    <div id="Overlay"></div>
+
     <div id="Introductions">
         <div id="GeneralIntroduction">
-            Hello, we are a small business located in the Oklahoma city - Edmond area. We are a small team of two looking to provide
-            a valuable service to enrich the community. Our names are Colton Crabb and Jake Davis, we are two young entrepreneurs
-            attending Christ the King Catholic School. We have the most affordable prices in the city, and scrub your cars like there is
-            no tomorrow. We clean, YOU drive! We make YOUR car the priority!
+            <div id="GeneralIntroContent">
+                <div id="GeneralText">
+                    Hello, we are a small business located in the Oklahoma city - Edmond area. We are a small team of two looking to provide
+                    a valuable service to enrich the community. Our names are Colton Crabb and Jake Davis, we are two young entrepreneurs
+                    attending Christ the King Catholic School. We have the most affordable prices in the city, and scrub your cars like there is
+                    no tomorrow. We clean, YOU drive! We make YOUR car the priority!
+                </div>
+            </div>
         </div>
         
-        <div id="ColtIntroduction">
-            <img src="lil bro.jpg" id="LilBroPic" class="ToBeAnimated Invisible">
-            <div id="ColtIntroductionContent" class="ToBeAnimatedDelayed Invisible">
-                Hello, my name if Colton Crabb. I am 14 years and am very passionate about working out and staying healthy. My family is a
-                tight knit group of hard workers and I want to live up to the standards, make them proud, and show them I can work hard too.
-            </div> 
-        </div>
-
-        <div id="JakeIntroduction">
-            <img src="Jake.jpg" id="JakePic" class="ToBeAnimated Invisible">
-            <div id="JakeIntroductionContent" class="ToBeAnimatedDelayed Invisible">
-                Hi, my name is Jake Davis. My favorite things to do are hangout with my friends, play basketball, and play video games.
-                When I grow up I want to own a company, and that's why I think starting a detailing business early will help me. I detail
-                so you can have a cleaner car wherever you go. Thank you for considering okcEliteDetailing!
-            </div> 
+        <div id="ColtandJakeIntros">
+            <div id="ColtIntroduction">
+                <img src="lil bro.jpg" id="LilBroPic" class="ToBeAnimated Invisible">
+                <div id="ColtIntroductionContent" class="ToBeAnimatedDelayed Invisible">
+                    Hello, my name if Colton Crabb. I am 14 years and am very passionate about working out and staying healthy. My family is a
+                    tight knit group of hard workers and I want to live up to the standards, make them proud, and show them I can work hard too.
+                </div> 
+            </div>
+    
+            <div id="JakeIntroduction">
+                <img src="Jake.jpg" id="JakePic" class="ToBeAnimated Invisible">
+                <div id="JakeIntroductionContent" class="ToBeAnimatedDelayed Invisible">
+                    Hi, my name is Jake Davis. My favorite things to do are hangout with my friends, play basketball, and play video games.
+                    When I grow up I want to own a company, and that's why I think starting a detailing business early will help me. I detail
+                    so you can have a cleaner car wherever you go. Thank you for considering okcEliteDetailing!
+                </div> 
+            </div>
         </div>
 
         <div id="PricesAndCars">
-            <img src="SUV.jpg" data-modal-target="#SUVModal" class="ModalButton">
+            <div>
+                <div id="SUVTextRaise" class="TextRaise Invisible">SUV prices and info</div>
+                <img src="SUV.jpg" data-modal-target="#SUVModal" class="ModalButton Invisible Slide1">
+            </div>
             <div id="SUVModal" class="Modal">
-                <button data-close-target="#SUVModal" class="CloseButton">&times;</button>
-                <div>
+                <div class="Header">
+                    <div class="HeaderContent">
+                        SUV info!
+                    </div>
+                    <button data-close-target="#SUVModal" class="CloseButton">&times;</button>
+                </div>
+                <div class="ModalContent">
                     SUV Modal Content
                 </div>
             </div>
 
-            <img src="Truck.jpg" data-modal-target="#TruckModal" class="ModalButton">
+            <div>
+                <div id="TruckTextRaise" class="TextRaise Invisible">Truck prices and info</div>
+                <img src="Truck.jpg" data-modal-target="#TruckModal" class="ModalButton Invisible Slide2">
+            </div>
             <div id="TruckModal" class="Modal">
-                <button data-close-target="#TruckModal" class="CloseButton">&times;</button>
-                <div>
+                <div class="Header">
+                    <div class="HeaderContent">
+                        Truck info!
+                    </div>
+                    <button data-close-target="#TruckModal" class="CloseButton">&times;</button>
+                </div>
+                <div class="ModalContent">
                     Truck Modal Content
                 </div>
             </div>
 
-            <img src="Sedan.png" data-modal-target="#SedanModal" class="ModalButton">
+            <div>
+                <div id="SedanTextRaise" class="TextRaise Invisible">Sedan prices and info</div>
+                <img src="Sedan.png" data-modal-target="#SedanModal" class="ModalButton Invisible Slide3">
+            </div>
             <div id="SedanModal" class="Modal">
-                <button data-close-target="#SedanModal" class="CloseButton">&times;</button>
-                <div>
+                <div class="Header">
+                    <div class="HeaderContent">
+                        Sedan info!
+                    </div>
+                    <button data-close-target="#SedanModal" class="CloseButton">&times;</button>
+                </div>
+                <div class="ModalContent">
                     Sedan Modal Content
                 </div>
             </div>
             
-            <img src="Coupe.jpg" data-modal-target="#CoupeModal" class="ModalButton">
+            <div>
+                <div id="CoupeTextRaise" class="TextRaise Invisible">Coupe prices and info</div>
+                <img src="Coupe.jpg" data-modal-target="#CoupeModal" class="ModalButton Invisible Slide4">
+            </div>
             <div id="CoupeModal" class="Modal">
-                <button data-close-target="#CoupeModal" class="CloseButton">&times;</button>
-                <div>
+                <div class="Header">
+                    <div class="HeaderContent">
+                        Coupe info!
+                    </div>
+                    <button data-close-target="#CoupeModal" class="CloseButton">&times;</button>
+                </div>
+                <div class="ModalContent">
                     Coupe Modal Content
                 </div>
             </div>
