@@ -26,13 +26,13 @@ overlay.addEventListener("click", () => {
 function openModal(modal) {
     if (modal == null) return;
     modal.classList.add('Active');
-    overlay.classList.add('OverlayActive');
+    overlay.classList.add('Active');
 }
 
 function closeModal(modal) {
     if (modal == null) return;
     modal.classList.remove('Active');
-    overlay.classList.remove('OverlayActive');
+    overlay.classList.remove('Active');
 }
 
 document.addEventListener('DOMContentLoaded', function() {
