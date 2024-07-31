@@ -1,6 +1,18 @@
 const openButton = document.querySelectorAll("[data-modal-target]");
 const closeButton = document.querySelectorAll("[data-close-target]");
 const overlay = document.getElementById('Overlay');
+const modalImage = document.getElementById('ModalImage');
+const slider1 = document.querySelectorAll('.Slide1');
+const slider2 = document.querySelectorAll('.Slide2');
+const slider3 = document.querySelectorAll('.Slide3');
+const slider4 = document.querySelectorAll('.Slide4');
+const elements = document.querySelectorAll('.ToBeAnimated');
+const delayedElements = document.querySelectorAll('.ToBeAnimatedDelayed');
+const SUVText = document.getElementById('SUVTextRaise');
+const truckText = document.getElementById('TruckTextRaise');
+const sedanText = document.getElementById('SedanTextRaise');
+const coupeText = document.getElementById('CoupeTextRaise');
+var executed = false;
 
 openButton.forEach((button) => {
     button.addEventListener('click', () => {
@@ -27,26 +39,17 @@ function openModal(modal) {
     if (modal == null) return;
     modal.classList.add('Active');
     overlay.classList.add('Active');
+    modalImage.classList.add('Deactivated');
 }
 
 function closeModal(modal) {
     if (modal == null) return;
     modal.classList.remove('Active');
     overlay.classList.remove('Active');
+    modalImage.classList.remove('Deactivated');
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-const elements = document.querySelectorAll('.ToBeAnimated');
-const delayedElements = document.querySelectorAll('.ToBeAnimatedDelayed');
-const slider1 = document.querySelectorAll('.Slide1');
-const slider2 = document.querySelectorAll('.Slide2');
-const slider3 = document.querySelectorAll('.Slide3');
-const slider4 = document.querySelectorAll('.Slide4');
-const SUVText = document.getElementById('SUVTextRaise');
-const truckText = document.getElementById('TruckTextRaise');
-const sedanText = document.getElementById('SedanTextRaise');
-const coupeText = document.getElementById('CoupeTextRaise');
-var executed = false;
 
 function checkPosition() {
     const windowHeight = window.innerHeight;

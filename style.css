@@ -25,6 +25,7 @@ body {
 #Overlay {
     position: fixed;
     transition: 500ms;
+    z-index: 50;
     top: 0;
     left: 0;
     bottom: 0;
@@ -39,29 +40,56 @@ body {
     user-select: none;
 }
 
+#TopBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+}
+
+#SocialMedias {
+    display: flex;
+    justify-content: space-around;
+    width: 20vw;
+}
+
+.Icon {
+    opacity: 1;
+    max-width: 4vw;
+    z-index: 101;
+    pointer-events: all;
+    user-select: all;
+}
+
+#Email {
+    color: white;
+}
+
+#Numbers {
+    color: white;
+}
+
 #GeneralIntroduction {
     height: 85vh;
     display: flex;
     place-items: center;
     padding: 5%;
-    background-image: url('Chamonix\ Mont\ Blanc.jpg');
 }
 
 #GeneralIntroContent {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 1%;
     border-radius: 10px;
 }
 
-#GeneralText {
-    color: white;
-}
-
 #ColtandJakeIntros {
-    /*
-    background-image: url('InfrontOfCar.jpg');
-    background-size: 100%;        Ask colton about this (him and jake infront of car, whether he wants it or not)
-    */
+    background-image: url('blured.png');
+    background-size: 100%;
 }
 
 #ColtIntroduction {
@@ -72,6 +100,7 @@ body {
 
 #LilBroPic {
     max-width: 20%;
+    z-index: 5;
 }
 
 #ColtIntroductionContent {
@@ -79,6 +108,8 @@ body {
     max-width: 30%;
     display: grid;
     place-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #JakeIntroduction {
@@ -93,10 +124,13 @@ body {
     max-width: 30%;
     display: grid;
     place-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #JakePic {
     max-width: 20%;
+    z-index: 5;
 }
 
 .Invisible {
@@ -165,7 +199,7 @@ body {
 .ModalButton {
     width: 20vw;
     height: 20vw;
-    border: 2px solid black;
+    border: 2px solid rgb(103, 211, 236);
     border-radius: 5px;
     cursor: pointer;
     z-index: 10;
@@ -185,13 +219,18 @@ body {
     max-height: 100%;
 }
 
+.ModalImage.Deactivated {
+    pointer-events: none;
+    user-select: none;
+}
+
 .Modal {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: 400ms ease-in-out;
-    border: 2px solid black;
+    border: 2px solid rgb(103, 211, 236);
     border-radius: 5px;
     z-index: 100;
     background-color: white;
