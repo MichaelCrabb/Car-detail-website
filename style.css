@@ -25,7 +25,7 @@ body {
 #Overlay {
     position: fixed;
     transition: 500ms;
-    z-index: 50;
+    z-index: 110;
     top: 0;
     left: 0;
     bottom: 0;
@@ -62,8 +62,7 @@ body {
     opacity: 1;
     max-width: 4vw;
     z-index: 101;
-    pointer-events: all;
-    user-select: all;
+    cursor: pointer;
 }
 
 #Email {
@@ -232,13 +231,17 @@ body {
     transition: 400ms ease-in-out;
     border: 2px solid rgb(103, 211, 236);
     border-radius: 5px;
-    z-index: 100;
+    z-index: 120;
     background-color: white;
     overflow-y: scroll;
     width: 1200px;
     height: 600px;
     max-width: 80%;
     max-height: 80%;
+}
+
+.Modal::-webkit-scrollbar-track {
+    border-radius: 5px;
 }
 
 .Modal.Active {

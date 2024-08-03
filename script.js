@@ -12,6 +12,9 @@ const SUVText = document.getElementById('SUVTextRaise');
 const truckText = document.getElementById('TruckTextRaise');
 const sedanText = document.getElementById('SedanTextRaise');
 const coupeText = document.getElementById('CoupeTextRaise');
+const instaLink = document.getElementById('InstaLogo');
+const tiktokLink = documnet.getElementbyId('TiktokLogo');
+const twitterLink = document.getElementbyID('XLogo');
 var executed = false;
 
 openButton.forEach((button) => {
@@ -47,6 +50,18 @@ function closeModal(modal) {
     modal.classList.remove('Active');
     overlay.classList.remove('Active');
     modalImage.classList.remove('Deactivated');
+}
+
+function newInstaTab() {
+    window.open("https://www.instagram.com/okcelitedetailing/" , '_blank');
+}
+
+function newTiktokTab() {
+    window.open("https://www.tiktok.com/@okcelitedetailing/", '_blank');
+}
+
+function newTwitterTab() {
+    window.open("https://x.com/okcElitedetails/", '_blank');
 }
 
 document.addEventListener('DOMContentLoaded', function() {

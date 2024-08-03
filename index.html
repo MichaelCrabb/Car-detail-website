@@ -13,14 +13,14 @@
 
     <div id="TopBar">
         <div id="SocialMedias">
-            <div id="InstaLogo">
-                <img src="instagram logo.jpg" class="Icon">
+            <div>
+                <img src="instagram logo.webp" class="Icon" id="InstaLogo" onclick="newInstaTab()">
             </div>
-            <div id="TiktokLogo">
-                <img src="tiktok logo.png" class="Icon">
+            <div>
+                <img src="tiktok logo.png" class="Icon" id="TiktokLogo" onclick="newTiktokTab()">
             </div>
-            <div id="XLogo">
-                <img src="x logo.png" class="Icon">
+            <div>
+                <img src="x logo.png" class="Icon" id="XLogo" onclick="newTwitterTab()">
             </div>
         </div>
         <div id="Email">
@@ -71,12 +71,39 @@
             <div id="SUVModal" class="Modal">
                 <div class="Header">
                     <div class="HeaderContent">
-                        SUV info!
+                        SUV -- $120
                     </div>
                     <button data-close-target="#SUVModal" class="CloseButton">&times;</button>
                 </div>
                 <div class="ModalContent">
-                    SUV Modal Content
+                    <div class="Services">
+                        We treat your SUVs like royalty with our deep clean! We remove all debris such as dog hair, pebbles, and anything
+                        of the sort. We clean stains anywhere and scrub the carpets, making them as good as new! The tires also aren't
+                        safe from us, we make that rubber shine!
+                        <br>
+                        <br>
+                        Here are some other services we offer:
+                        <ul>
+                            <li>
+                                Oder elimination
+                            </li>
+                            <li>
+                                Pressure blast
+                            </li>
+                            <li>
+                                Spot-free rinse
+                            </li>
+                            <li>
+                                Window cleaning
+                            </li>
+                            <li>
+                                Power air dry
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="PastCleans">
+
+                    </div>
                 </div>
             </div>
 
@@ -87,12 +114,17 @@
             <div id="TruckModal" class="Modal">
                 <div class="Header">
                     <div class="HeaderContent">
-                        Truck info!
+                        Truck -- $120
                     </div>
                     <button data-close-target="#TruckModal" class="CloseButton">&times;</button>
                 </div>
                 <div class="ModalContent">
-                    Truck Modal Content
+                    <div class="Services">
+                        
+                    </div>
+                    <div class="PastCleans">
+
+                    </div>
                 </div>
             </div>
 
@@ -103,7 +135,7 @@
             <div id="SedanModal" class="Modal">
                 <div class="Header">
                     <div class="HeaderContent">
-                        Sedan info!
+                        Sedan
                     </div>
                     <button data-close-target="#SedanModal" class="CloseButton">&times;</button>
                 </div>
@@ -119,7 +151,7 @@
             <div id="CoupeModal" class="Modal">
                 <div class="Header">
                     <div class="HeaderContent">
-                        Coupe info!
+                        Coupe
                     </div>
                     <button data-close-target="#CoupeModal" class="CloseButton">&times;</button>
                 </div>
@@ -136,7 +168,7 @@
         <div id="FooterContent">
             Check us out at on our <a href="https://www.instagram.com/okcelitedetailing/" title="Our Instagram @okcelitedetailing" 
             target="_blank">Instagram</a>, <a href="https://www.tiktok.com/@okcelitedetailing/" title="Our TikTok @okcelitedetailing" 
-            target="_blank">TikTok</a>, and our <a href="https://x.com/okcElitedetails" title="Our Twitter @okcelitedetailing" 
+            target="_blank">TikTok</a>, and our <a href="https://x.com/okcElitedetails/" title="Our Twitter @okcelitedetailing" 
             target="_blank">Twitter</a>.
         </div>
 
