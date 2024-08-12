@@ -277,6 +277,11 @@ body {
     padding: 10px 15px;
 }
 
+.Prices {
+    display: flex;
+    justify-content: space-around;
+}
+
 #Footer {
     background-color: black;
     color: white;
