@@ -139,7 +139,7 @@ function checkPosition() {
     });
     /*
     This code is for the SUV modal image and allows it to complete the sliding and appearing animation, additionally it
-    gives it the hover animation where it grows and has a shadow
+    gives it the hover animation where it grows and developes a shadow
     */
     slider1.forEach(slid1 => {
         if (executed) { return; }
@@ -166,7 +166,7 @@ function checkPosition() {
     });
     /*
     This code is for the Truck modal image and allows it to complete the delayed sliding and appearing animation, additionally it
-    gives it the hover animation where it grows and has a shadow
+    gives it the hover animation where it grows and developes a shadow
     */
     slider2.forEach(slid2 => {
         if (executed) { return; }
@@ -193,7 +193,7 @@ function checkPosition() {
     });
     /*
     This code is for the Sedan modal image and allows it to complete the delayed sliding and appearing animation, additionally it
-    gives it the hover animation where it grows and has a shadow
+    gives it the hover animation where it grows and developes a shadow
     */
     slider3.forEach(slid3 => {
         if (executed) { return; }
@@ -220,7 +220,7 @@ function checkPosition() {
     });
     /*
     This code is for the Coupe modal image and allows it to complete the delayed sliding and appearing animation, additionally it
-    gives it the hover animation where it grows and has a shadow
+    gives it the hover animation where it grows and developes a shadow
     */
     slider4.forEach(slid4 => {
         if (executed) { return; }
