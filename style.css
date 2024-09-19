@@ -176,6 +176,14 @@ body {
     transition-delay: 550ms;
 }
 
+#GeneralInfo {
+    height: 70vh;
+    outline-color: lime;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 #PricesAndCars {
     height: 100vh;
     display: flex;
